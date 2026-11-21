@@ -1,0 +1,2 @@
+class RangoFechasInvalidoException(ValueError):
+    pass

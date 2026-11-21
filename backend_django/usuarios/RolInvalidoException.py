@@ -1,0 +1,2 @@
+class RolInvalidoException(Exception):
+    pass

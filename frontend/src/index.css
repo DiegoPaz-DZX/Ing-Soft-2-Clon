@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens de Kyzen (tomados de los mockups).
+ * Tailwind v4 genera utilidades a partir de estas variables:
+ *   bg-primary, text-income, border-line, rounded-card, shadow-card, etc.
+ */
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  /* Marca */
+  --color-primary: #7c5cfc;
+  --color-primary-dark: #6246ea;
+  --color-primary-soft: #efeaff;
+  --color-accent: #5b5bf5;
+
+  /* Semánticos financieros */
+  --color-income: #16a34a;
+  --color-income-soft: #d1fae5;
+  --color-mint: #a7f3d0;
+  --color-expense: #ef4444;
+  --color-expense-soft: #fee2e2;
+  --color-warning: #f59e0b;
+  --color-warning-soft: #fef3c7;
+
+  /* Superficies y texto */
+  --color-app: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-line: #eceef5;
+  --color-ink: #1e1b2e;
+  --color-muted: #8a8fa3;
+  --color-navy: #1e1b3a;
+
+  /* Forma */
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(30 27 46 / 0.04), 0 8px 24px rgb(30 27 46 / 0.06);
+  --shadow-pop: 0 20px 50px rgb(30 27 46 / 0.18);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-app font-sans text-ink antialiased;
+  }
+}
+
+@layer components {
+  /* Etiqueta pequeña en mayúsculas usada en tarjetas y formularios */
+  .label-caps {
+    @apply text-[11px] font-semibold tracking-wider text-muted uppercase;
+  }
+}

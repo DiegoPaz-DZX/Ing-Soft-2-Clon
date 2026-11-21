@@ -1,0 +1,2 @@
+class TipoCambioNoDisponibleException(Exception):
+    pass

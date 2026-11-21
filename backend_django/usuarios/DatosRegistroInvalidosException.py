@@ -1,0 +1,2 @@
+class DatosRegistroInvalidosException(ValueError):
+    pass

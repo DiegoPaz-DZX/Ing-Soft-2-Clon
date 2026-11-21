@@ -1,0 +1,2 @@
+class MontoInvalidoException(ValueError):
+    pass

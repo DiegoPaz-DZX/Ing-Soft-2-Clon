@@ -1,0 +1,2 @@
+class DatosMovimientoInvalidosException(Exception):
+    pass

@@ -1,0 +1,2 @@
+class DivisaNoSoportadaException(ValueError):
+    pass

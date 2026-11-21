@@ -1,0 +1,2 @@
+class CorreoRegistradoException(ValueError):
+    pass

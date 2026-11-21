@@ -1,0 +1,2 @@
+class MovimientoNoEncontradoException(Exception):
+    pass
